@@ -1,0 +1,53 @@
+table, caption {
+    background-color: #0059fd;
+    color: yellow;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+caption {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: center;
+}
+
+th {
+    font-size: 1.2em;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.salad {
+    background-color: greenyellow;
+    color: red;
+}
+
+.rinat {
+    background: radial-gradient(circle, rgba(63, 174, 251, 1) 0%, rgba(125, 70, 252, 1) 100%);
+}
+
+.black {
+    background-color: black;
+}
+
+.pink {
+    background-color: pink;
+    color: black;
+}
+
+.me {
+    background-image: linear-gradient(to bottom right, rgb(242, 255, 99), rgb(215, 229, 121), rgb(188, 203, 142), rgb(160, 178, 164), rgb(133, 152, 185), rgb(106, 126, 207), rgb(94, 141, 207), rgb(82, 156, 207), rgb(71, 171, 207), rgb(59, 186, 207), rgb(47, 201, 207), rgb(35, 216, 207));
+}
