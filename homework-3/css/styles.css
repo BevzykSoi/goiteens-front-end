@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu&display=swap');
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
 header {
     text-align: center;
     margin: 70px 0;
@@ -9,6 +15,7 @@ ul {
     line-height: 19px;
     text-transform: uppercase;
     padding: 0;
+    font-weight: normal;
 }
 
 li {
@@ -46,6 +53,7 @@ h3 {
     line-height: 16px;
     color: #B4AD9E;
     text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
 }
 
 h2 {
@@ -78,4 +86,9 @@ button {
     line-height: 19px;
     color: #626262;
     margin-bottom: 70px;
+    font-family: "Playfair Display", serif;
+}
+
+a:hover {
+    color: #03A9F4;
 }
