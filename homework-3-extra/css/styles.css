@@ -1,0 +1,81 @@
+div {
+    display: inline-block;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: all 0.2s;
+}
+
+.box:hover {
+    background-color: black;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link:active {
+    color: green;
+}
+
+.link:visited {
+    color: yellow;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid green;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+}
+
+ul {
+    margin-bottom: 30px;
+}
+
+ li:nth-child(/*2*/ /*4*/ /*6*/odd /*even*/ /*2n*/ /*2n+1*/){
+    background-color: grey;
+}
+
+.last-link {
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    text-align: center;
+}
+
+.last-link::before {
+    content:/*1*/ /*12345*/ '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    transform: scaleX(0);
+    transition: all 0.2s;
+    transform-origin: 0%;
+}
+
+.last-link::after {
+    content: /*1*/ /*12345*/ '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    transform: scaleX(0);
+    transition: all 0.2s;
+    transform-origin: 100%;
+}
+
+.last-link:hover::before {
+    transform: scaleX(1);
+}
+
+.last-link:hover::after {
+    transform: scaleX(1);
+}
