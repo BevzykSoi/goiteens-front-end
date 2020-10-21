@@ -87,4 +87,11 @@ button {
 
 a:hover {
     color: #03A9F4;
+    transition: all 0.4s;
+}
+
+button:hover {
+    color: white;
+    background-color: #03A9F4;
+    transition: all 0.4s;
 }
