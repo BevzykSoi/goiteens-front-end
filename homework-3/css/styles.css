@@ -28,10 +28,6 @@ li a {
     text-decoration: none;
 }
 
-.active a {
-    color: #03A9F4;
-}
-
 .container {
     margin: 0 150px;
     display: flex;
