@@ -179,7 +179,7 @@ form>input {
     width: 230px;
     height: 40px;
     border: 1px solid #B6B6B6;
-    /* padding-left: 10px; */
+    padding-left: 10px;
 }
 
 form>input:focus {
