@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    color: #FFFFFF;
+    width: 100%;
+    height: 540px;
+    background-size: cover;
+    background-image: url("../images/header-bg-image.png");
+    background-position: center;
+}
+
+.logo, .logo-mobile {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: default;
+    margin-top: 42px;
+}
+
+.logo {
+    display: none;
+}
+
+.logo-mobile {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 112px;
+    margin-bottom: 22px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 17px;
+    color: inherit;
+    transition: all 0.3s;
+}
+
+.sign-up {
+    width: 93px;
+    height: 40px;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.sign-up:active {
+    transform: scale(0.9, 0.9);
+}
+
+.sign-up:hover {
+    background-color: #FFFFFF;
+    color: #FF4E50;
+    
+}
+
+nav a:hover {
+    color: #FF4E50;
+}
+
+.dreams {
+    margin: 0 auto;
+}
+
+h1 {
+    width: 306px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.dreams h2 {
+    width: 247px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 17px auto 12px auto;
+}
+
+.dreams a {
+    width: 282px;
+    height: 43px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    background-color: #FF4E50;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dreams a:hover {
+    color: #FF4E50;
+    background-color: #FFFFFF;
+}
+
+.dreams a:active {
+    transform: scale(0.9, 0.9);
+}
+
+#partners {
+    width: 100%;
+    justify-content: space-around;
+}
+
+#partners h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #333333;
+    margin-top: 63px;
+}
+
+#partners ul {
+    width: 283px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#partners li {
+    max-width: 217px;
+    height: 235px;
+    margin-bottom: 32px;
+}
+
+#partners li:nth-child(4) {
+    margin-bottom: 29px;
+}
+
+#partners h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #333333;
+    margin-top: 16px;
+    margin-bottom: 13px;
+}
+
+#partners p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #666666;
+}
+
+#partners a {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF4E50;
+    background-color: #FFFFFF;
+    border: 2px solid #FF4E50;
+    box-sizing: border-box;
+    width: 280px;
+    height: 40px;
+    border-radius: 30px;
+    transition: all 0.3s;
+    margin-bottom: 72px;
+}
+
+#partners a:hover {
+    background-color: #FF4E50;
+    color: #FFFFFF;
+}
+
+#partners a:active {
+    transform: scale(0.9, 0.9);
+}
+
+.img-block {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header-container {
+        justify-content: space-between;
+    }
+
+    header {
+        height: 700px;
+    }
+
+    .logo-mobile {
+        display: none;
+    }
+
+    .logo {
+        display: inline;
+    }
+
+    nav ul{
+        margin-top: 36px;
+        margin-bottom: 0;
+    }
+
+    h1 {
+        width: 507px;
+        font-size: 52px;
+        line-height: 63px;
+        margin-top: 126px;
+    }
+
+    .dreams h2 {
+        width: 428px;
+        font-size: 24px;
+        line-height: 28px;
+        margin: 36px auto 33px auto;
+    }
+
+    .dreams a {
+        width: 228px;
+        height: 42px;
+    }
+
+    #partners h2 {
+        margin-top: 67px;
+    }
+    
+    #partners ul {
+        flex-flow: row wrap;
+        width: 470px;
+        margin: 0 auto;
+        margin-top: 35px;
+    }
+
+    #partners li:nth-child(3), #partners li:nth-child(4) {
+        margin-bottom: 38px;
+    }
+
+    #partners a {
+        width: 195px;
+        height: 42px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 65%;
+    }
+
+    #partners h2 {
+        margin-top: 65px;
+    }
+
+    #partners ul {
+        width: 914px;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 37px;
+    }
+
+    #partners li:nth-child(3):not, #partners li:nth-child(4):not {
+        margin-bottom: 38px;
+    }
+}
