@@ -9,17 +9,21 @@ body {
     padding: 0;
 }
 
+body * {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 ul {
     list-style: none;
-    display: flex;
 }
 
 a {
@@ -35,7 +39,7 @@ header {
     background-position: center;
 }
 
-.logo, .logo-mobile {
+.logo  {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -44,31 +48,24 @@ header {
     text-transform: uppercase;
     color: #FFFFFF;
     cursor: default;
-    margin-top: 42px;
-}
-
-.logo {
-    display: none;
-}
-
-.logo-mobile {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
     margin-top: 112px;
     margin-bottom: 22px;
 }
 
-nav ul {
+nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    padding: 0;
+    flex-direction: column-reverse;
 }
 
-nav li {
-    margin-left: 20px;
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 19px;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 nav a {
@@ -81,7 +78,7 @@ nav a {
 }
 
 .sign-up {
-    width: 93px;
+    width: 92px;
     height: 40px;
     border: 2px solid #FFFFFF;
     border-radius: 20px;
@@ -90,6 +87,7 @@ nav a {
     justify-content: center;
     align-items: center;
     transition: all 0.3s;
+    margin-left: 20px;
 }
 
 .sign-up:active {
@@ -107,11 +105,12 @@ nav a:hover {
 }
 
 .dreams {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-    width: 306px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -119,38 +118,33 @@ h1 {
     line-height: 37px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 auto;
 }
 
 .dreams h2 {
-    width: 247px;
+    max-width: 77%;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    margin: 17px auto 12px auto;
+    margin-top: 17px;
+    margin-bottom: 12px;
 }
 
 .dreams a {
-    width: 282px;
+    width: 90%;
     height: 43px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    margin: 0 auto;
     color: #FFFFFF;
     background-color: #FF4E50;
     border-radius: 30px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s;
-    cursor: pointer;
+    padding: 13px 0;
+    box-sizing: border-box;
     transition: all 0.3s;
 }
 
@@ -163,12 +157,14 @@ h1 {
     transform: scale(0.9, 0.9);
 }
 
-#partners {
+.partners {
     width: 100%;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#partners h2 {
+.partners h2 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -179,28 +175,26 @@ h1 {
     margin-top: 63px;
 }
 
-#partners ul {
-    width: 283px;
+.partners ul {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: column wrap;
-    padding: 0;
-    margin: 0 auto;
     margin-top: 20px;
 }
 
-#partners li {
+.partners li {
     max-width: 217px;
-    height: 235px;
+    max-height: 235px;
     margin-bottom: 32px;
 }
 
-#partners li:nth-child(4) {
+.partners li:nth-child(4) {
     margin-bottom: 29px;
 }
 
-#partners h4 {
+.partners h4 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -212,7 +206,7 @@ h1 {
     margin-bottom: 13px;
 }
 
-#partners p {
+.partners p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -222,8 +216,7 @@ h1 {
     color: #666666;
 }
 
-#partners a {
-    margin: 0 auto;
+.partners a {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -236,19 +229,19 @@ h1 {
     background-color: #FFFFFF;
     border: 2px solid #FF4E50;
     box-sizing: border-box;
-    width: 280px;
+    width: 87%;
     height: 40px;
     border-radius: 30px;
     transition: all 0.3s;
     margin-bottom: 72px;
 }
 
-#partners a:hover {
+.partners a:hover {
     background-color: #FF4E50;
     color: #FFFFFF;
 }
 
-#partners a:active {
+.partners a:active {
     transform: scale(0.9, 0.9);
 }
 
@@ -258,88 +251,97 @@ h1 {
 }
 
 @media (min-width: 768px) {
-    .container {
-        width: 90%;
+    .header-container {
+        justify-content: center;
+        padding-top: 36px;
     }
 
-    .header-container {
-        justify-content: space-between;
+    .header-container * {
+        margin-top: 0;
     }
 
     header {
         height: 700px;
     }
 
-    .logo-mobile {
-        display: none;
+    nav {
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .logo {
-        display: inline;
+    .sign-up {
+        width: 93px;
     }
 
-    nav ul{
-        margin-top: 36px;
-        margin-bottom: 0;
+    .dreams {
+        max-width: 66%;
     }
 
     h1 {
-        width: 507px;
         font-size: 52px;
         line-height: 63px;
         margin-top: 126px;
     }
 
     .dreams h2 {
-        width: 428px;
+        max-width: 100%;
         font-size: 24px;
         line-height: 28px;
-        margin: 36px auto 33px auto;
+        margin-top: 36px;
+        margin-bottom: 33px;
     }
 
     .dreams a {
-        width: 228px;
+        width: 45%;
         height: 42px;
     }
 
-    #partners h2 {
+    .partners h2 {
         margin-top: 67px;
     }
     
-    #partners ul {
+    .partners ul {
         flex-flow: row wrap;
-        width: 470px;
-        margin: 0 auto;
+        max-width: 61%;
         margin-top: 35px;
     }
 
-    #partners li:nth-child(3), #partners li:nth-child(4) {
+    .partners li:nth-child(3), .partners li:nth-child(4) {
         margin-bottom: 38px;
     }
 
-    #partners a {
-        width: 195px;
+    .partners a {
+        width: 25%;
         height: 42px;
     }
 }
 
 @media (min-width: 1440px) {
-    .container {
-        width: 65%;
+    .dreams {
+        max-width: 35%;
     }
 
-    #partners h2 {
+    .partners {
+        max-width: 63%;
+    }
+    
+    .partners h2 {
         margin-top: 65px;
     }
 
-    #partners ul {
-        width: 914px;
+    .partners a {
+        width: 21%;
+    }
+
+    .partners ul {
+        max-width: 100%;
         flex-flow: row nowrap;
         justify-content: space-between;
         margin-bottom: 37px;
     }
 
-    #partners li:nth-child(3):not, #partners li:nth-child(4):not {
+    .partners li:nth-child(3):not, .partners li:nth-child(4):not {
         margin-bottom: 38px;
     }
 }
