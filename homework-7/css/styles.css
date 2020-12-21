@@ -293,7 +293,7 @@ h1 {
     }
 
     .dreams a {
-        width: 50%;
+        width: 40%;
         height: 42px;
     }
 
@@ -320,6 +320,10 @@ h1 {
 @media (min-width: 1440px) {
     .dreams {
         max-width: 507px;
+    }
+
+    .dreams a {
+        width: 50%;
     }
 
     .partners {
