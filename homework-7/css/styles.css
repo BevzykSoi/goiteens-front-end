@@ -121,7 +121,7 @@ h1 {
 }
 
 .dreams h2 {
-    max-width: 77%;
+    max-width: 247px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -133,7 +133,7 @@ h1 {
 }
 
 .dreams a {
-    width: 90%;
+    width: 88%;
     height: 43px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -275,7 +275,7 @@ h1 {
     }
 
     .dreams {
-        max-width: 66%;
+        max-width: 570px;
     }
 
     h1 {
@@ -285,7 +285,7 @@ h1 {
     }
 
     .dreams h2 {
-        max-width: 100%;
+        max-width: 768px;
         font-size: 24px;
         line-height: 28px;
         margin-top: 36px;
@@ -293,7 +293,7 @@ h1 {
     }
 
     .dreams a {
-        width: 45%;
+        width: 50%;
         height: 42px;
     }
 
@@ -303,7 +303,7 @@ h1 {
     
     .partners ul {
         flex-flow: row wrap;
-        max-width: 61%;
+        max-width: 470px;
         margin-top: 35px;
     }
 
@@ -319,23 +319,19 @@ h1 {
 
 @media (min-width: 1440px) {
     .dreams {
-        max-width: 35%;
+        max-width: 507px;
     }
 
     .partners {
-        max-width: 63%;
+        max-width: 914px;
     }
     
     .partners h2 {
         margin-top: 65px;
     }
 
-    .partners a {
-        width: 21%;
-    }
-
     .partners ul {
-        max-width: 100%;
+        max-width: 1440px;
         flex-flow: row nowrap;
         justify-content: space-between;
         margin-bottom: 37px;
