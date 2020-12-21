@@ -134,6 +134,7 @@ h1 {
 
 .dreams a {
     width: 88%;
+    max-width: 282px;
     height: 43px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -230,6 +231,7 @@ h1 {
     border: 2px solid #FF4E50;
     box-sizing: border-box;
     width: 87%;
+    max-width: 280px;
     height: 40px;
     border-radius: 30px;
     transition: all 0.3s;
@@ -293,7 +295,7 @@ h1 {
     }
 
     .dreams a {
-        width: 40%;
+        max-width: 228px;
         height: 42px;
     }
 
@@ -312,7 +314,7 @@ h1 {
     }
 
     .partners a {
-        width: 25%;
+        max-width: 195px;
         height: 42px;
     }
 }
@@ -320,10 +322,6 @@ h1 {
 @media (min-width: 1440px) {
     .dreams {
         max-width: 507px;
-    }
-
-    .dreams a {
-        width: 50%;
     }
 
     .partners {
