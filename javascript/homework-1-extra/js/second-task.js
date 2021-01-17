@@ -54,7 +54,7 @@ let s = height * width;
 let heightC = 10;
 let dC = 4;
 let S = Math.PI * (dC * dC / 4);
-let v = s * heightC;
+let v = S * heightC;
 
 //Восьме завдання
 
