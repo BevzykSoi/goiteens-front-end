@@ -1,14 +1,14 @@
 //Перше завдання
 
-let str = "Привіт";
-let num = 123;
-let flag = true;
-const txt = "true";
+// let str = "Привіт";
+// let num = 123;
+// let flag = true;
+// const txt = "true";
 
-console.log(typeof str);
-console.log(typeof num);
-console.log(typeof flag);
-console.log(typeof txt);
+// console.log(typeof str);
+// console.log(typeof num);
+// console.log(typeof flag);
+// console.log(typeof txt);
 
 //Друге завдання
 
