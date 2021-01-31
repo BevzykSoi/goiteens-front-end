@@ -53,8 +53,7 @@
 
 // let heightC = 10;
 // let dC = 4;
-// let S = Math.PI * (dC * dC / 4);
-// let v = S * heightC;
+// let v = Math.PI * (dC * dC / 4) * heightC;
 
 //Восьме завдання
 
