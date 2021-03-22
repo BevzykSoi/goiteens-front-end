@@ -6,11 +6,14 @@
 // user.userName = "Kostiantyn"
 // user.age = 11;
 // user.showUserName = function () {
-//     console.log(this.name);
+//     console.log(this.userName);
 // }
 // user.updateAge = function () {
 //     console.log(this.age + 1);
 // }
+
+// user.showUserName();
+// user.updateAge();
 
 //Друге завданння
 
@@ -39,12 +42,16 @@
 //         calculator.b = b;
 //     },
 //     sum() {
-//         calculator.a + calculator.b;
+//         console.log(calculator.a + calculator.b);
 //     },
 //     mult() {
-//         calculator.a * calculator.b;
+//         console.log(calculator.a * calculator.b);
 //     }
 // }
+
+// calculator.read(2, 3);
+// calculator.sum();
+// calculator.mult();
 
 //Четверте завдання
 
