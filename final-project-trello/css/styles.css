@@ -118,7 +118,9 @@ main .container {
     width: 100%;
     margin-bottom: 24px;
     padding: 21px;
-    transition: all 0.3s;
+    transition: visibility 0.3s;
+    cursor: move;
+    cursor: -webkit-grabbing;
 }
 
 .card:hover .arrow {
