@@ -1,0 +1,389 @@
+.navigation a.bold {
+    font-weight: 800;
+}
+
+main {
+    padding: 0;
+}
+
+.hat {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hat-info {
+    background: linear-gradient(179.69deg, #C8DCFF 56.74%, rgba(200, 220, 255, 0.508571) 77.46%, rgba(200, 220, 255, 0.04) 99.74%);
+    position: relative;
+    padding-top: 115px;
+    margin: 0;
+}
+
+.hat-info .container {
+    display: block;
+}
+
+.lines>* {
+    position: absolute;
+}
+
+.line-second {
+    margin-top: 67px;
+}
+
+.line-third {
+    margin-top: 141px;
+    margin-left: -20px;
+}
+
+.hat-heading h2 {
+    font-weight: 800;
+    font-size: 64px;
+}
+
+.hat-heading p {
+    font-weight: normal;
+    font-size: 28px;
+    text-align: end;
+}
+
+.hat-image {
+    position: relative;
+    z-index: 2;
+}
+
+.hat-image::before {
+    content: '';
+    top: 44px;
+    left: -31px;
+    width: 100%;
+    height: 97%;
+    border: 4px solid #FF9900;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.slider li {
+    border: 4px solid #5ACD47;
+    font-weight: 500;
+    min-width: 64px;
+    min-height: 64px;
+    font-size: 36px;
+    border-radius: 50%;
+    color: rgba(0, 56, 255, 0.65);
+    text-align: center;
+    position: relative;
+}
+
+.slider li:not(:last-child) {
+    margin-right: 140px;
+}
+
+.slider li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 107%;
+    margin-top: 50%;
+    min-width: 140px;
+    min-height: 4px;
+    background-color: #5ACD47;
+}
+
+.working .container {
+    display: block;
+}
+
+.working {
+    margin-top: 100px;
+}
+
+.work-heading, .portfolio-heading, .reviews-heading {
+    width: 100%;
+    display: flex;
+    min-height: 200px;
+    min-width: 456px;
+    position: relative;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.work-heading {
+    justify-content: space-between;
+}
+
+.work-heading h4 {
+    font-weight: 500;
+    font-size: 40px;
+    margin-right: 100px;
+}
+
+.work-main {
+    display: flex;
+}
+
+.work-desc {
+    display: block;
+}
+
+.work-desc-row {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    flex-direction: row;
+    margin-top: 150px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.rectangles {
+    display: flex;
+    align-items: center;
+}
+
+.yellow-rectangle {
+    min-width: 6px;
+    height: 80%;
+    margin: 0 30px;
+    background-color: #FF9900;
+}
+
+.green-rectangle {
+    min-width: 16px;
+    height: 160%;
+    background-color: #5ACD47;
+}
+
+.work-desc-row p {
+    font-weight: normal;
+    font-size: 24px;
+    margin-right: 100px;
+}
+
+.reverse p {
+    margin-right: 0;
+    margin-left: 100px;
+    text-align: end;
+}
+
+.work-main img {
+    margin-left: -100px;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+main h2:not(.hat-info h2) {
+    font-weight: 500;
+    font-size: 72px;
+    color: rgba(0, 56, 255, 0.65);
+}
+
+main h2:not(.hat-info h2):after {
+    content: '';
+    min-width: 150px;
+    min-height: 3px;
+    background-color: #5ACD47;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 190px;
+    margin-left: -20px;
+}
+
+.portfolio .container {
+    display: block;
+}
+
+.portfolio-heading, .reviews-heading h4 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.portfolio-heading>div, .reviews-heading>div {
+    width: 35%;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-list li {
+    width: 23%;
+    min-height: 594px;
+    background-color: rgba(200, 220, 255, 0.5);
+    margin-top: 78px;
+    border-radius: 23px;
+    position: relative;
+}
+
+.bordered {
+    border: 6px solid #FF9900;
+}
+
+.portfolio-list li::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+.portfolio-list li:first-child::before {
+    background-image: url("../img/Counter-strike.jpg");
+}
+
+.portfolio-list li:last-child::before {
+    background-image: url("../img/Dota-2.jpg");
+}
+
+.portfolio-list p {
+    font-weight: 500;
+    font-size: 26px;
+    padding: 0 38px;
+    margin-top: 295px;
+}
+
+#normal {
+    font-weight: normal;
+    margin-top: 120px;
+}
+
+.portfolio-list h4 {
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 30px;
+    padding-top: 78px;
+}
+
+.blue {
+    color: rgba(0, 56, 255, 0.98);
+}
+
+.reviews .container {
+    display: block;
+}
+
+.reviews-desc-head img {
+    margin-left: -50px;
+}
+
+.reviews-desc-head {
+    display: flex;
+    align-items: center;
+}
+
+.reviews-desc-head>div {
+    width: 35%;
+}
+
+.reviews-desc-head p {
+    font-weight: 300;
+    font-size: 26px;
+    width: 30%;
+    text-align: center;
+}
+
+.reviews-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-list li {
+    width: 25%;
+    min-height: 340px;
+    background-color: rgba(200, 220, 255, 0.62);
+    border-radius: 41px;
+}
+
+.reviews-list>li>div:first-child>img {
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.reviews-list>li>div {
+    display: flex;
+    align-items: center;
+}
+
+.reviews-list>li>div>p {
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    width: 60%;
+}
+
+.reviews-list>li>p {
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 35px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.stars img:not(:last-child) {
+    padding-right: 10px;
+}
+
+footer {
+    background: linear-gradient(359.14deg, rgba(200, 220, 255, 0.508571) 45.71%, rgba(200, 220, 255, 0) 94.19%);
+    padding-top: 100px;
+}
+
+footer .container {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social h1 {
+    display: inline-block;
+    margin-bottom: 53px;
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-list li:not(:last-child) {
+    margin-right: 28px;
+}
+
+.footer-list img {
+    min-width: 107px;
+    min-height: 107px;
+}
+
+.information ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.information li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.information p {
+    font-weight: normal;
+    font-size: 30px;
+    margin-left: 45px;
+}

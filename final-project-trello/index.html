@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фіолетовий Lorem</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="./index.html"><h1 class="logo">LOREM</h1></a>
+            <div class="navigation">
+                <a href="./about-project.html">About project</a>
+                <a href="./about-us.html">About us</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="column todo">
+                <div>
+                    <h2 class="heading">TO DO</h2>
+                    <ul class="cards"></ul>
+                    <form class="adding-card">
+                        <input name="title" id="title" type="text" placeholder="Title..." required>
+                        <input name="description" id="description" type="text" placeholder="Description..." required>
+                        <div class="radiobuttons">
+                            <input class="radio" type="radio" name="priority" value="H" id="radio1">
+                            <label for="radio1" id="H">H</label>
+                            <input class="radio" type="radio" name="priority" value="M" id="radio2">
+                            <label for="radio2" id="M">M</label>
+                            <input class="radio" type="radio" name="priority" value="L" id="radio3">
+                            <label for="radio3" id="L">L</label>
+                        </div>
+                        <div class="submitting">
+                            <button id="save" type="submit">Save</button>
+                            <button class="cancel" type="reset" onclick="hideEditFields()">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                <button class="button" onclick="showEditFields()">Add card</button>
+            </div>
+            <div class="column inprogress">
+                <h2 class="heading">IN PROGRESS</h2>
+                <ul class="cards"></ul>
+            </div>
+            <div class="column done">
+                <h2 class="heading">DONE</h2>
+                <ul class="cards"></ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <ul class="footer-list">
+                <li><a href="https://www.instagram.com/bevzyk_soi/"><img src="./img/instagram.svg" alt="Instagram"></a>
+                </li>
+                <li><a href="https://twitter.com"><img src="./img/twitter.svg" alt="Twitter"></a></li>
+                <li><a href="https://web.telegram.org/#/im?p=s1238203313_10557652405262497686"><img
+                            src="./img/telegram.svg" alt="Telegram"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <svg style="display: none;">
+        <defs id="symbols">
+            <symbol viewBox="0 0 24 24" id="cross-icon" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M6 18L18 6M6 6l12 12" />
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="arrow-icon" fill="currentColor" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                </path>
+            </symbol>
+        </defs>
+    </svg>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
